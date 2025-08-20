@@ -68,15 +68,15 @@ function App() {
     <main id="page" className="min-h-screen flex justify-center items-end transition-colors duration-200 relative">
       {/* Hex code */}
       <div className="min-h-screen flex justify-center items-center absolute">
-        <div className="text-center text-3xl text-white font-mono uppercase glass bg-black/40 backdrop-blur-3xl p-18 rounded-lg">
+        <div className="text-center text-3xl text-white font-mono uppercase glass bg-black/40 backdrop-blur-3xl px-6 md:px-18 py-18  rounded-lg ">
           <p>{hexCode}</p>
           <p className="lowercase">rgb({rgb.red},{rgb.green},{rgb.blue})</p>
         </div>
       </div>
 
       {/* Dock */}
-      <div className="card mx-auto bg-base-300 mb-8 rounded-full">
-        <form onSubmit={(e) => e.preventDefault()} className="card-body flex-row items-center py-3 space-x-2" >
+      <div className="card mx-auto bg-base-300 mb-8 md:rounded-full">
+        <form onSubmit={(e) => e.preventDefault()} className="card-body flex-col md:flex-row items-center py-3 space-y-2.5 md:space-x-2 md:space-y-0" >
           <div className="inline-flex items-center w-full space-x-2">
             <label className="select-none">RGB:</label>
             {
